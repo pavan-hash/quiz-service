@@ -15,7 +15,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("quiz")
-@CrossOrigin("https://chipper-druid-6bc1e2.netlify.app/")
 public class quizController {
 
     @Autowired
