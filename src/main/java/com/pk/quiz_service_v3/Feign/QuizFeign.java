@@ -15,7 +15,7 @@ import java.util.List;
 public interface QuizFeign {
     @GetMapping("question/generate")
     public ResponseEntity<List<Integer>> generateQuestions(@RequestParam String category, @RequestParam Integer numq);
-    @GetMapping("question/get")
+    @PostMapping("question/get")
     public ResponseEntity<List<questionWrapper>> getQuestionsByIds(@RequestBody List<Integer> qids);
 
     @PostMapping("question/getScore")
